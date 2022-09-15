@@ -316,27 +316,27 @@ body {
 
 
 /*-----------------------------------*\
-  #HERO
+  #clinic
 \*-----------------------------------*/
 
-.hero {
+.clinic {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   padding-block-end: calc(var(--section-padding) / 2);
 }
 
-.hero-content { margin-block-end: 50px; }
+.clinic-content { margin-block-end: 50px; }
 
-.hero-title { margin-block: 15px 30px; }
+.clinic-title { margin-block: 15px 30px; }
 
-.hero-text {
+.clinic-text {
   font-size: var(--fs-6);
   line-height: 1.45;
   margin-block-end: 40px;
 }
 
-.hero-form {
+.clinic-form {
   background-color: var(--white);
   max-width: unset;
   /* 95% */
@@ -345,7 +345,7 @@ body {
   box-shadow: var(--shadow-3);
 }
 
-.hero-form .form-field {
+.clinic-form .form-field {
   background-color: var(--cultured);
   color: var(--black);
   min-height: 70px;
@@ -354,14 +354,14 @@ body {
   margin-block-end: 15px;
 }
 
-.hero-form ::placeholder {
+.clinic-form ::placeholder {
   font-style: italic;
   color: var(--sonic-silver);
   font-size: small;
   text-overflow: ellipsis;
 }
 
-.hero-form .btn { width: 100%; }
+.clinic-form .btn { width: 100%; }
 
 
 
@@ -425,18 +425,18 @@ body {
 
 
 /*-----------------------------------*\
-  #DOCTOR
+  #team
 \*-----------------------------------*/
 
-.doctor .section-title { margin-block-end: 50px; }
+.team .section-title { margin-block-end: 50px; }
 
-.doctor-card .card-banner {
+.team-card .card-banner {
   border-radius: var(--radius-4);
   overflow: hidden;
   margin-block-end: 25px;
 }
 
-.doctor-card {
+.team-card {
   padding: 30px;
   border: 1px solid var(--light-gray);
   border-radius: var(--radius-4);
@@ -444,26 +444,26 @@ body {
   min-height: 100%;
 }
 
-.doctor-card .card-title {
+.team-card .card-title {
   font-size: var(--fs-4);
   transition: var(--transition);
 }
 
-.doctor-card:is(:hover, :focus-within) .card-title { color: var(--royal-blue-light); }
+.team-card:is(:hover, :focus-within) .card-title { color: var(--royal-blue-light); }
 
-.doctor-card .card-subtitle {
+.team-card .card-subtitle {
   color: var(--royal-blue-light);
   margin-block: 10px 15px;
 }
 
-.doctor-card .card-social-list {
+.team-card .card-social-list {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
 
-.doctor-card .card-social-link {
+.team-card .card-social-link {
   background-color: var(--lavender-web);
   color: var(--royal-blue-light);
   font-size: 16px;
@@ -472,7 +472,7 @@ body {
   transition: var(--transition);
 }
 
-.doctor-card .card-social-link:is(:hover, :focus) {
+.team-card .card-social-link:is(:hover, :focus) {
   background-color: var(--royal-blue-light);
   color: var(--white);
 }
@@ -707,27 +707,41 @@ body {
 
 
 
+/*-----------------------------------*\
+  #Login
+\*-----------------------------------*/
 
+.float-icon {
+  position: fixed;
+  background-color: var(--royal-blue-light);
+  font-size: 18px;
+  color: var(--white);
+  padding-top: 10px;
+  padding-bottom: 9px;
+  padding-left: 11px;
+  padding-right: 13px;
+  border-radius: 50%;
+  transition: var(--transition);
+}
+.float-icon.login {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+}
 
 /*-----------------------------------*\
   #BACK TO TOP
 \*-----------------------------------*/
 
-.back-top-btn {
+.float-icon.back-top-btn {
   position: fixed;
-  bottom: 10px;
-  right: 20px;
-  background-color: var(--royal-blue-light);
-  font-size: 18px;
-  color: var(--white);
-  padding: 14px;
-  border-radius: 50%;
   visibility: hidden;
   opacity: 0;
-  transition: var(--transition);
+  bottom: 10px;
+  right: 20px;
 }
 
-.back-top-btn.active {
+.float-icon.back-top-btn.active {
   transform: translateY(-10px);
   visibility: visible;
   opacity: 1;
@@ -836,28 +850,28 @@ body {
 
 
   /**
-   * HERO
+   * clinic
    */
 
-  .hero { overflow: hidden; }
+  .clinic { overflow: hidden; }
 
-  .hero .container {
+  .clinic .container {
     display: grid;
     grid-template-columns: 1fr 0.75fr;
     align-items: center;
     gap: 20px;
   }
 
-  .hero-content { margin-block-end: 0; }
+  .clinic-content { margin-block-end: 0; }
 
-  .hero-form { position: relative; }
+  .clinic-form { position: relative; }
 
-  .hero-form .email-field {
+  .clinic-form .email-field {
     margin-block-end: 0;
     padding-inline-end: 190px;
   }
 
-  .hero-form .btn {
+  .clinic-form .btn {
     width: auto;
     position: initial;
     top: 15px;
@@ -865,7 +879,7 @@ body {
     bottom: 15px;
   }
 
-  .hero-banner { margin-inline-end: -60px;}
+  .clinic-banner { margin-inline-end: -60px;}
 
 
 
@@ -881,7 +895,7 @@ body {
 
 
   /**
-   * DOCTOR
+   * team
    */
 
   .scrollbar-item { min-width: calc(50% - 15px); }
@@ -1054,6 +1068,10 @@ body {
     padding: 15px 20px;
   }
 
+  .appointment-book-not-active {
+    display: none;
+  }
+
 
 
   /**
@@ -1087,7 +1105,7 @@ body {
 
 
   /**
-   * DOCTOR
+   * team
    */
 
   .scrollbar-item { min-width: calc(33.33% - 20px); }
@@ -1180,10 +1198,10 @@ body {
 
 
   /**
-   * DOCTOR
+   * team
    */
 
-  .doctor { padding-block-end: 180px; }
+  .team { padding-block-end: 180px; }
 
   .scrollbar-item { min-width: calc(25% - 22.5px); }
 
