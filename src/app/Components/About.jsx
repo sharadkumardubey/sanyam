@@ -43,7 +43,7 @@ const About = (props) => {
           <h2 className='text-2xl font-bold text-white'>
             About <span className='text-orange-500'>Me</span>
           </h2>
-          <span className='text-white text-base italic font-semibold w-6/12 backdrop-blur-xl border-1 rounded-lg p-1'>
+          <span className='hidden md:block text-white text-base italic font-semibold w-6/12 backdrop-blur-xl border-1 rounded-lg p-1'>
             Experienced counselor specializing in anxiety, depression,
             relationships. Empowering clients for resilience and growth. Trusted
             guide in mental wellness journey.

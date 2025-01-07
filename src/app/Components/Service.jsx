@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import CardBGImg from '../CardBGImg.jpeg';
 import Cards from './Cards';
 import PropTypes from 'prop-types';
@@ -10,7 +10,7 @@ const serviceCardData = [
     title: 'Individual Counseling',
     isClickable: true,
     description:
-      "Personalized one-on-one sessions to help you navigate anxiety, depression, and life's challenges. Begin your journey to healing today.",
+      "Personalized 1-2-1 sessions to help you navigate anxiety, depression, and life's challenges. Begin your journey to healing today.",
   },
   {
     title: 'Couples Counseling',

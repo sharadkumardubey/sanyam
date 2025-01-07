@@ -31,6 +31,6 @@
 }
 
 .bg-flower-card {
-  @apply rounded-2xl min-h-96 p-4 m-8;
+  @apply rounded-2xl min-h-96 p-4 m-4 md:m-8;
   background-image: url('./CardBGImg.jpeg');
 }

@@ -3,17 +3,17 @@ import PropTypes from 'prop-types';
 
 const HomeE = (props) => {
   return (
-    <div className='m-4 flex flex-col content-between items-center'>
-      <span className='border-2 border-slate-800 rounded-2xl font-bold px-6 m-1 mt-8 py-1 animate-bounce'>
+    <div className='mt-4 md:m-4 flex flex-col content-between items-center'>
+      <span className='border-2 border-gray-700 rounded-2xl font-bold px-6 m-1 md:mt-8 py-1 animate-bounce'>
         Hello!
       </span>
-      <h1 className='flex justify-center items-center flex-col text-6xl font-extrabold m-8 text-center'>
+      <h1 className='flex justify-center items-center flex-col text-4xl md:text-6xl font-extrabold m-4 md:m-8 text-center'>
         <span className='flex items-center'>
-          I'm&nbsp;<span className='text-orange-500'>Manisha</span>,
+          I&apos;m&nbsp;<span className='text-orange-500'>Manisha</span>,
         </span>
-        <span className='block mt-8'>Counselor Psychologist</span>
+        <span className='block mt-4 md:mt-8'>Counselor Psychologist</span>
       </h1>
-      <div className='content-between flex mx-4 mt-12'>
+      <div className='flex flex-col md:flex-row content-between items-center mx-4 mt-4 md:mt-12'>
         <blockquote className='flex-1 text-base italic font-semibold'>
           <svg
             className='w-8 h-8 text-gray-400 dark:text-gray-600 mb-4'
@@ -31,12 +31,12 @@ const HomeE = (props) => {
           </p>
           <p>Highly Recommended.</p>
         </blockquote>
-        <div className='flex-1 bg-gradient-to-r from-white to-orange-400 p-12 rounded-tl-full rounded-tr-full flex items-center justify-center'>
-          <button className='text-slate-800 text-lg font-bold backdrop-filter backdrop-blur-sm bg-white/30 rounded-2xl py-4 pl-2 pr-4 border-2 border-gray-400 hover:bg-white/20'>
-            <span className='bg-orange-500 text-white hover:bg-orange-600 rounded-2xl my-1 mr-2 p-3'>
+        <div className='flex-1 bg-gradient-to-r from-white to-orange-400 p-10 rounded-tl-full rounded-tr-full flex items-center justify-center mt-4 md:mt-0'>
+          <button className='p-2 flex items-center flex-col md:flex-row text-slate-800 text-lg font-bold backdrop-filter backdrop-blur-sm bg-white/30 rounded-2xl border-2 border-gray-400 hover:bg-white/20'>
+            <span className='bg-orange-500 text-white hover:bg-orange-600 rounded-2xl my-1 mr-2 p-2 flex w-max md:flex-row'>
               My Portfolio ↗️
             </span>
-            Hire me
+            <span>Hire me</span>
           </button>
         </div>
 
