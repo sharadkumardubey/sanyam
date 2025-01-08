@@ -2,7 +2,7 @@
 const nextConfig = {
   output: 'export',
   basePath: '/sanyam',
-  assetPrefix: '/sanyam/',
+  assetPrefix: '/sanyam',
   trailingSlash: true,
 };
 
