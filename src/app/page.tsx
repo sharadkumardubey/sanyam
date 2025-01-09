@@ -25,7 +25,7 @@ const navigationData = [
     label: (
       <>
         <Image
-          src='/sanyamcover.png'
+          src='/sanyam/sanyamcover.png'
           width={200}
           height={100}
           priority={false}

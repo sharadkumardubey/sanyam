@@ -3,16 +3,16 @@ import PropTypes from 'prop-types';
 import Cards from './Cards';
 
 const imageList = [
-  { image: '/images/C1.jpeg' },
-  { image: '/images/C2.jpeg' },
-  { image: '/images/C3.jpeg' },
-  { image: '/images/C4.jpeg' },
-  { image: '/images/C5.jpeg' },
-  { image: '/images/C6.jpeg' },
-  { image: '/images/C7.jpeg' },
-  { image: '/images/C8.mp4' },
-  { image: '/images/C9.jpeg' },
-  { image: '/images/C10.jpeg' },
+  { image: '/sanyam/images/C1.jpeg' },
+  { image: '/sanyam/images/C2.jpeg' },
+  { image: '/sanyam/images/C3.jpeg' },
+  { image: '/sanyam/images/C4.jpeg' },
+  { image: '/sanyam/images/C5.jpeg' },
+  { image: '/sanyam/images/C6.jpeg' },
+  { image: '/sanyam/images/C7.jpeg' },
+  { image: '/sanyam/images/C8.mp4' },
+  { image: '/sanyam/images/C9.jpeg' },
+  { image: '/sanyam/images/C10.jpeg' },
 ];
 
 const Gallery = (props) => {
